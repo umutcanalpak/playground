@@ -2,7 +2,7 @@
   App works! {{time}}
 </p>
 
-<app-mavi [(titleChild)]="title" [childArray]="myArray" ></app-mavi>
+<app-mavi [(titleChild)]="title" [childArray]="myArray" [childObject]="myObject" ></app-mavi>
 
 <app-siyah></app-siyah>
 
@@ -19,7 +19,7 @@
 
 <p>
   <label for="myArray"></label>
-  <input [(ngModel)]="myArray[1].mavi.siyah.time" id="myArray" type="text" placeholder="Hey you!">
+  <input [(ngModel)]="myObject.name" id="myArray" type="text" placeholder="Hey you!">
 </p>
 <p>
   {{myArray | json}}

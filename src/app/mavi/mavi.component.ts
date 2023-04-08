@@ -10,6 +10,7 @@ import { MikeService } from '../mike.service';
 export class MaviComponent {
   @Input() titleChild = '';
   @Input() childArray = [];
+  @Input() childObject = {};
   @Output() titleChildChange = new EventEmitter<string>()
   time = 0;
 

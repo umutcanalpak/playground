@@ -9,6 +9,7 @@ import { MikeService } from './mike.service';
 export class AppComponent implements OnInit {
   time = 0;
   myObject: any = {
+    name: 'myObject',
     mavi: {
       name: 'mavi',
       siyah: {
@@ -18,34 +19,37 @@ export class AppComponent implements OnInit {
     },
   };
 
-  myArray: any = [{
-    mavi: {
-      name: 'mavi',
-      siyah: {
-        name: 'siyah',
-        time: new Date().getTime(),
+  myArray: any = [
+    {
+      mavi: {
+        name: 'mavi',
+        siyah: {
+          name: 'siyah',
+          time: new Date().getTime(),
+        },
       },
     },
-  },{
-    mavi: {
-      name: 'mavi',
-      siyah: {
-        name: 'siyah',
-        time: new Date().getTime(),
+    {
+      mavi: {
+        name: 'mavi',
+        siyah: {
+          name: 'siyah',
+          time: new Date().getTime(),
+        },
       },
     },
-  },{
-    mavi: {
-      name: 'mavi',
-      siyah: {
-        name: 'siyah',
-        time: new Date().getTime(),
+    {
+      mavi: {
+        name: 'mavi',
+        siyah: {
+          name: 'siyah',
+          time: new Date().getTime(),
+        },
       },
     },
-  }];
+  ];
 
   title = '';
-  
 
   constructor(private mikeService: MikeService) {}
 
