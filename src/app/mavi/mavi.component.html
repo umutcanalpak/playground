@@ -1,9 +1,16 @@
-<p>mavi works! {{time}}</p>
+<p>mavi works! {{ time }}</p>
 
 <p>
-    <label for="titleChild">titleChild</label>
-    <input [(ngModel)]="titleChild" id="titleChild" type="text" (input)="onInput()">
+  <label for="titleChild">titleChild</label>
+  <input
+    [(ngModel)]="titleChild"
+    id="titleChild"
+    type="text"
+    (input)="onInput()"
+  />
 </p>
+<p>titleChild: {{ titleChild }}</p>
+
 <p>
-    titleChild: {{titleChild}}
+  {{ childArray | json }}
 </p>

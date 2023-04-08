@@ -1,13 +1,15 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { MikeService } from '../mike.service';
 
 @Component({
   selector: 'app-mavi',
   templateUrl: './mavi.component.html',
   styleUrls: ['./mavi.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MaviComponent {
   @Input() titleChild = '';
+  @Input() childArray = [];
   @Output() titleChildChange = new EventEmitter<string>()
   time = 0;
 
