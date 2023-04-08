@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ColorDirectiveDirective } from './color-directive.directive';
 import { MaviComponent } from './mavi/mavi.component';
 import { SiyahComponent } from './siyah/siyah.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SiyahComponent } from './siyah/siyah.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,13 +2,24 @@
   App works! {{time}}
 </p>
 
-<app-mavi></app-mavi>
-<app-mavi></app-mavi>
-<app-mavi></app-mavi>
-<app-mavi></app-mavi>
-<app-mavi></app-mavi>
-
+<app-mavi [(titleChild)]="title"></app-mavi>
 
 <app-siyah></app-siyah>
-<app-siyah></app-siyah>
-<app-siyah></app-siyah>
+
+<p>
+  {{myObject | json}}
+</p>
+<p>
+  {{myArray | json}}
+</p>
+
+<button type="button" (click)="update()">Update</button>
+
+<p>
+  <label for="title"></label>
+  <input [(ngModel)]="title" id="title" type="text" placeholder="Hey you!">
+</p>
+
+<p>
+  Title: {{title}}
+</p>
