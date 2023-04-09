@@ -7,10 +7,8 @@ import { Component } from '@angular/core';
 })
 export class OnPushParentComponent {
   parentObject= {
-    objectName: 'parentObject',
-    features: {
-      objectName: 'features',
-      color: 'blue'
-    }
-  }
+    objectName: 'parentObject'
+  };
+
+  titleParent = '';
 }

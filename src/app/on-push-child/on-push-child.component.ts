@@ -8,4 +8,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class OnPushChildComponent {
   @Input() parentObject: any = {};
+  @Input() titleParent = '';
 }
