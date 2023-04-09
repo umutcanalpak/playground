@@ -1,0 +1,7 @@
+<p>on-push-parent works!</p>
+
+<input [(ngModel)]="parentObject.features.color" type="text">
+<p>parentObject.features.color: {{parentObject.features.color}}</p>
+
+<hr>
+<app-on-push-child [parentObject]="parentObject"></app-on-push-child>

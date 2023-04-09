@@ -12,6 +12,8 @@ import { ParentComponent } from './parent/parent.component';
 import { GeraltComponent } from './geralt/geralt.component';
 import { HenryComponent } from './henry/henry.component';
 import { RaynorComponent } from './raynor/raynor.component';
+import { OnPushParentComponent } from './on-push-parent/on-push-parent.component';
+import { OnPushChildComponent } from './on-push-child/on-push-child.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { RaynorComponent } from './raynor/raynor.component';
     ParentComponent,
     GeraltComponent,
     HenryComponent,
-    RaynorComponent
+    RaynorComponent,
+    OnPushParentComponent,
+    OnPushChildComponent
   ],
   imports: [
     BrowserModule,
