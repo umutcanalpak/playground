@@ -7,13 +7,17 @@ import { ColorDirectiveDirective } from './color-directive.directive';
 import { MaviComponent } from './mavi/mavi.component';
 import { SiyahComponent } from './siyah/siyah.component';
 import { FormsModule } from '@angular/forms';
+import { JesseComponent } from './jesse/jesse.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorDirectiveDirective,
     MaviComponent,
-    SiyahComponent
+    SiyahComponent,
+    JesseComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,

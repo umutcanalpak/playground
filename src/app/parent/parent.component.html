@@ -1,0 +1,32 @@
+<p>parent works!</p>
+
+<p>myObject: {{ myObject | json }}</p>
+
+<app-mavi
+  [(titleChild)]="title"
+  [childArray]="myArray"
+  [childObject]="myObject"
+></app-mavi>
+
+<app-siyah></app-siyah>
+
+<button type="button" (click)="update()">Update</button>
+
+<p>
+  <label for="title"></label>
+  <input [(ngModel)]="title" id="title" type="text" placeholder="Hey you!" />
+</p>
+<p>Title: {{ title }}</p>
+
+<p>
+  <label for="myArray"></label>
+  <input
+    [(ngModel)]="myObject.name"
+    id="myArray"
+    type="text"
+    placeholder="Hey you!"
+  />
+</p>
+<p>
+  {{ myArray | json }}
+</p>
