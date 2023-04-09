@@ -14,6 +14,6 @@ export class OnPushChildComponent implements DoCheck {
   }
 
   ngDoCheck(): void {
-    this.changeDetectorRef.markForCheck();
+    // this.changeDetectorRef.markForCheck();
   }
 }
