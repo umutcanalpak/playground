@@ -9,6 +9,7 @@ import { SiyahComponent } from './siyah/siyah.component';
 import { FormsModule } from '@angular/forms';
 import { JesseComponent } from './jesse/jesse.component';
 import { ParentComponent } from './parent/parent.component';
+import { GeraltComponent } from './geralt/geralt.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ParentComponent } from './parent/parent.component';
     MaviComponent,
     SiyahComponent,
     JesseComponent,
-    ParentComponent
+    ParentComponent,
+    GeraltComponent
   ],
   imports: [
     BrowserModule,
