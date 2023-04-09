@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { JesseComponent } from './jesse/jesse.component';
 import { ParentComponent } from './parent/parent.component';
 import { GeraltComponent } from './geralt/geralt.component';
+import { HenryComponent } from './henry/henry.component';
+import { RaynorComponent } from './raynor/raynor.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { GeraltComponent } from './geralt/geralt.component';
     SiyahComponent,
     JesseComponent,
     ParentComponent,
-    GeraltComponent
+    GeraltComponent,
+    HenryComponent,
+    RaynorComponent
   ],
   imports: [
     BrowserModule,
