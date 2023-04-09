@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, Input } from '@angular/core';
 
 @Component({
   selector: 'app-on-push-child',
@@ -6,7 +6,14 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   styleUrls: ['./on-push-child.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class OnPushChildComponent {
+export class OnPushChildComponent implements DoCheck {
   @Input() parentObject: any = {};
   @Input() titleParent = '';
+
+  constructor(private changeDetectorRef: ChangeDetectorRef) {    
+  }
+
+  ngDoCheck(): void {
+    this.changeDetectorRef.markForCheck();
+  }
 }
