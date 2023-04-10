@@ -1,0 +1,14 @@
+<p>pipe-test works!</p>
+
+<p>
+  <button type="button" (click)="edit()">Edit</button>
+</p>
+<p>
+  <button type="button" (click)="edit2()">Edit2</button>
+</p>
+<p>
+  <button type="button" (click)="edit3()">Edit3</button>
+</p>
+
+<p>myObjectArray = {{ myObjectArray | json }}</p>
+<p>myObjectArrayPiped = {{ myObjectArray | myPipe : 2 | json }}</p>

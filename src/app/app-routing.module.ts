@@ -4,6 +4,7 @@ import { JesseComponent } from './jesse/jesse.component';
 import { ParentComponent } from './parent/parent.component';
 import { RaynorComponent } from './raynor/raynor.component';
 import { OnPushParentComponent } from './on-push-parent/on-push-parent.component';
+import { PipeTestComponent } from './pipe-test/pipe-test.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'on-push-parent',
     component: OnPushParentComponent,
+  },
+  {
+    path: 'pipe-test',
+    component: PipeTestComponent,
   },
 ];
 

@@ -14,6 +14,8 @@ import { HenryComponent } from './henry/henry.component';
 import { RaynorComponent } from './raynor/raynor.component';
 import { OnPushParentComponent } from './on-push-parent/on-push-parent.component';
 import { OnPushChildComponent } from './on-push-child/on-push-child.component';
+import { MyPipePipe } from './my-pipe.pipe';
+import { PipeTestComponent } from './pipe-test/pipe-test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { OnPushChildComponent } from './on-push-child/on-push-child.component';
     HenryComponent,
     RaynorComponent,
     OnPushParentComponent,
-    OnPushChildComponent
+    OnPushChildComponent,
+    MyPipePipe,
+    PipeTestComponent
   ],
   imports: [
     BrowserModule,
