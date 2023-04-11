@@ -24,13 +24,10 @@ export class PipeTestComponent {
 
   edit() {
     this.myObjectArray[0].id = 4;
-
-    // this.myObjectArray = [...this.myObjectArray];
   }
 
   edit2() {
-    this.myObjectArray[0] = { ...this.myObjectArray[0], id: 999 };
-
+    this.myObjectArray[0].id = 4;
     this.myObjectArray = [...this.myObjectArray];
   }
 
