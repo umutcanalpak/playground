@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MikeService } from '../mike.service';
 
 @Component({
   selector: 'app-parent',
@@ -7,60 +6,7 @@ import { MikeService } from '../mike.service';
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent {
-  time = 0;
-  myObject: any = {
-    name: 'myObject',
-    mavi: {
-      name: 'mavi',
-      siyah: {
-        name: 'siyah',
-        time: new Date().getTime(),
-      },
-    },
-  };
-  myArray: any = [
-    {
-      mavi: {
-        name: 'mavi',
-        siyah: {
-          name: 'siyah',
-          time: new Date().getTime(),
-        },
-      },
-    },
-    {
-      mavi: {
-        name: 'mavi',
-        siyah: {
-          name: 'siyah',
-          time: new Date().getTime(),
-        },
-      },
-    },
-    {
-      mavi: {
-        name: 'mavi',
-        siyah: {
-          name: 'siyah',
-          time: new Date().getTime(),
-        },
-      },
-    },
-  ];
-  title = '';
-  nullArray: any = null;
+  constructor() {}
 
-  constructor(private mikeService: MikeService) {}
-
-  ngOnInit(): void {
-    this.time = this.mikeService.time;
-
-    // for (const item of this.nullArray) {
-    //   console.log(item);
-    // }
-  }
-
-  update() {
-    this.myArray[1].mavi.siyah.time = new Date().getTime();
-  }
+  ngOnInit(): void {}
 }
