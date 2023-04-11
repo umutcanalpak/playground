@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   arr = [2, 3, 1];
+  arr2 = [999999];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.myFunc('111', '222', '3');
+    this.arr2 = this.arr.filter((value: number) => {
+
+      return value === 8;
+    });
+    // this.myFunc('111', '222', '3');
   }
 
   myFunc(...arr: string[]) {
