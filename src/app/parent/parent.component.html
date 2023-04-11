@@ -1,11 +1,21 @@
 <p>parent works!</p>
 
-<div>
-  {{arr | json}}
-</div>
-<div>
-  {{arr2 | json}}
+<div *ngIf="!!obj as asd">
+  <p>
+    obj: {{ obj | json }}   
+  </p>
+  <p>
+    asd: {{ asd | json }}   
+  </p>
+  
 </div>
 
-<hr>
+<div>
+  {{ arr | json }}
+</div>
+<div>
+  {{ arr | json }}
+</div>
+
+<hr />
 <app-mavi></app-mavi>
