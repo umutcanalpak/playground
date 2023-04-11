@@ -18,7 +18,6 @@ export class ParentComponent {
       },
     },
   };
-
   myArray: any = [
     {
       mavi: {
@@ -48,13 +47,17 @@ export class ParentComponent {
       },
     },
   ];
-
   title = '';
+  nullArray: any = null;
 
   constructor(private mikeService: MikeService) {}
 
   ngOnInit(): void {
     this.time = this.mikeService.time;
+
+    // for (const item of this.nullArray) {
+    //   console.log(item);
+    // }
   }
 
   update() {
