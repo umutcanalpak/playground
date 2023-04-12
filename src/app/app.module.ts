@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { MySecondPipePipe } from './my-second-pipe.pipe';
 import { HomeComponent } from './home/home.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ServerCallComponent } from './server-call/server-call.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +37,15 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
     MySecondPipePipe,
     PipeTestComponent,
     HomeComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    ServerCallComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

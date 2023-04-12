@@ -7,6 +7,7 @@ import { OnPushParentComponent } from './on-push-parent/on-push-parent.component
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { HomeComponent } from './home/home.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ServerCallComponent } from './server-call/server-call.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'parent',
     component: ParentComponent,
+  },
+  {
+    path: 'server-call',
+    component: ServerCallComponent,
   },
   {
     path: 'view-child',
