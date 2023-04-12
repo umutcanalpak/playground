@@ -29,18 +29,40 @@ export class ParentComponent {
   ) {}
 
   ngOnInit(): void {
-    const time = new Date().getTime();
-    const shared$ = interval(2000).pipe(take(3), shareReplay());
+    function geralt() {
+      return (param: string): string => {
+        return param;
+      };
+    }
 
-    shared$.subscribe((x) => {
-      console.log('sub A: ', x, new Date().getTime() - time);
-    });
+    function olaf() {
+      return function (param: string): string {
+        return param;
+      };
+    }
 
-    setTimeout(() => {
-      shared$.subscribe((y) => {
-        console.log('sub B: ', y, new Date().getTime() - time);
-      });
-    }, 1000);
+    const skyrim = geralt();
+    const warband = olaf();
+
+    console.log(111111111111);
+    console.log(skyrim);
+    console.log(skyrim('qweqwe'));
+    console.log(warband);
+    console.log(warband('asdasd'));
+    console.log(111111111111);
+
+    // const time = new Date().getTime();
+    // const shared$ = interval(2000).pipe(take(3), shareReplay());
+
+    // shared$.subscribe((x) => {
+    //   console.log('sub A: ', x, new Date().getTime() - time);
+    // });
+
+    // setTimeout(() => {
+    //   shared$.subscribe((y) => {
+    //     console.log('sub B: ', y, new Date().getTime() - time);
+    //   });
+    // }, 1000);
 
     // console.log(111111111111);
     // let copy : any= this.arr;
