@@ -25,8 +25,8 @@ export class ParentComponent {
   };
 
   form = this.fb.group({
-    title: ['qweqw']
-  })
+    title: ['qweqw'],
+  });
 
   constructor(
     private mikeService: MikeService,
@@ -35,20 +35,38 @@ export class ParentComponent {
   ) {}
 
   ngOnInit(): void {
-    const asd =  () => {};
-    const asd2 =  () => 2;
-    const asd3 =  () => '3';
-    console.log(11111111);
-    console.log(asd());
-    console.log(asd2());
-    console.log(asd3());
-    console.log(11111111);
-    
+    function speak(word: string) {
+      console.log('speak: ', word);
+    }
 
-    
+    let registered = (word: string) => {};
+
+    function registerSpeak(cb: (word: string) => void) {
+      registered = cb;
+    }
+
+    registerSpeak(speak);
+    console.log(1111);
+    registered('qweqw');
+    console.log(1111);
+    //
+    //
+    //
+
+    // const asd =  () => {};
+    // const asd2 =  () => 2;
+    // const asd3 =  () => '3';
+    // console.log(11111111);
+    // console.log(asd());
+    // console.log(asd2());
+    // console.log(asd3());
+    // console.log(11111111);
     // console.log(11111111111111);
     // console.log(/[A-Z]/.test('A'));
     // console.log(11111111111111);
+    //
+    //
+    //
     // function geralt() {
     //   return (param: string): string => {
     //     return param;
