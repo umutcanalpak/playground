@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-call.component.scss'],
 })
 export class ServerCallComponent implements OnInit {
+  url = 'http://localhost:3000/api';
+  urlError = 'http://localhost:3000/api/error';
+
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
-    this.httpClient.get('http://localhost:3000/api').subscribe((val) => {
-      console.log(11111111);
-      console.log(val);
-      console.log(11111111);
+    this.httpClient.get(this.url).subscribe({
+      next(value) {
+        console.log(111111111);
+        console.log(value);
+        console.log(111111111);
+      },
+      error(err) {
+        console.log(2222222);
+        console.log(err);
+        console.log(2222222);
+      }
     });
   }
 }
