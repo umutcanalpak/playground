@@ -25,7 +25,8 @@ export class ParentComponent {
   };
 
   form = this.fb.group({
-    title: ['qweqw'],
+    title: ['oblivion'],
+    color: ['blue'],
   });
 
   constructor(
@@ -35,20 +36,28 @@ export class ParentComponent {
   ) {}
 
   ngOnInit(): void {
-    function speak(word: string) {
-      console.log('speak: ', word);
-    }
+    this.form.setValue({
+      title: 'qweq',
+      color: 'ee',
+    });
+    //
+    //
+    //
 
-    let registered = (word: string) => {};
+    // function speak(word: string) {
+    //   console.log('speak: ', word);
+    // }
 
-    function registerSpeak(cb: (word: string) => void) {
-      registered = cb;
-    }
+    // let registered = (word: string) => {};
 
-    registerSpeak(speak);
-    console.log(1111);
-    registered('qweqw');
-    console.log(1111);
+    // function registerSpeak(cb: (word: string) => void) {
+    //   registered = cb;
+    // }
+
+    // registerSpeak(speak);
+    // console.log(1111);
+    // registered('qweqw');
+    // console.log(1111);
     //
     //
     //
