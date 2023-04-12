@@ -16,6 +16,8 @@ import { OnPushChildComponent } from './on-push-child/on-push-child.component';
 import { MyPipePipe } from './my-pipe.pipe';
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { MySecondPipePipe } from './my-second-pipe.pipe';
+import { HomeComponent } from './home/home.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { MySecondPipePipe } from './my-second-pipe.pipe';
     OnPushChildComponent,
     MyPipePipe,
     MySecondPipePipe,
-    PipeTestComponent
+    PipeTestComponent,
+    HomeComponent,
+    ViewchildComponent
   ],
   imports: [
     BrowserModule,

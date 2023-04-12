@@ -5,11 +5,21 @@ import { ParentComponent } from './parent/parent.component';
 import { RaynorComponent } from './raynor/raynor.component';
 import { OnPushParentComponent } from './on-push-parent/on-push-parent.component';
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
+import { HomeComponent } from './home/home.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'parent',
     component: ParentComponent,
+  },
+  {
+    path: 'viewChild',
+    component: ViewchildComponent,
   },
   {
     path: 'jesse',
