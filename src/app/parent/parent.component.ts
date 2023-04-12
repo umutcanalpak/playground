@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MikeService } from '../mike.service';
 import { MikeTwoService } from '../mike2.service';
 import { interval, take, shareReplay } from 'rxjs';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-parent',
@@ -23,9 +24,14 @@ export class ParentComponent {
     },
   };
 
+  form = this.fb.group({
+    title: ['qweqw']
+  })
+
   constructor(
     private mikeService: MikeService,
-    private mikeTwoService: MikeTwoService
+    private mikeTwoService: MikeTwoService,
+    private fb: FormBuilder
   ) {}
 
   ngOnInit(): void {

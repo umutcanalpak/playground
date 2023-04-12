@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColorDirectiveDirective } from './color-directive.directive';
 import { MaviComponent } from './mavi/mavi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JesseComponent } from './jesse/jesse.component';
 import { ParentComponent } from './parent/parent.component';
 import { GeraltComponent } from './geralt/geralt.component';
@@ -36,7 +36,8 @@ import { MySecondPipePipe } from './my-second-pipe.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
