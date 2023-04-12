@@ -29,27 +29,34 @@ export class ParentComponent {
   ) {}
 
   ngOnInit(): void {
-    function geralt() {
-      return (param: string): string => {
-        return param;
-      };
-    }
 
-    function olaf() {
-      return function (param: string): string {
-        return param;
-      };
-    }
+    console.log(11111111111111);
+    console.log(/[A-Z]/.test('A'));
+    console.log(11111111111111);
+    
 
-    const skyrim = geralt();
-    const warband = olaf();
 
-    console.log(111111111111);
-    console.log(skyrim);
-    console.log(skyrim('qweqwe'));
-    console.log(warband);
-    console.log(warband('asdasd'));
-    console.log(111111111111);
+    // function geralt() {
+    //   return (param: string): string => {
+    //     return param;
+    //   };
+    // }
+
+    // function olaf() {
+    //   return function (param: string): string {
+    //     return param;
+    //   };
+    // }
+
+    // const skyrim = geralt();
+    // const warband = olaf();
+
+    // console.log(111111111111);
+    // console.log(skyrim);
+    // console.log(skyrim('qweqwe'));
+    // console.log(warband);
+    // console.log(warband('asdasd'));
+    // console.log(111111111111);
 
     // const time = new Date().getTime();
     // const shared$ = interval(2000).pipe(take(3), shareReplay());
