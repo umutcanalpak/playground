@@ -35,7 +35,15 @@ export class ParentComponent {
   ) {}
 
   ngOnInit(): void {
-
+    const asd =  () => {};
+    const asd2 =  () => 2;
+    const asd3 =  () => '3';
+    console.log(11111111);
+    console.log(asd());
+    console.log(asd2());
+    console.log(asd3());
+    console.log(11111111);
+    
 
     
     // console.log(11111111111111);
