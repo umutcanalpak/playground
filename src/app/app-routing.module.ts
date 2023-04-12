@@ -18,7 +18,7 @@ const routes: Routes = [
     component: ParentComponent,
   },
   {
-    path: 'viewChild',
+    path: 'view-child',
     component: ViewchildComponent,
   },
   {
