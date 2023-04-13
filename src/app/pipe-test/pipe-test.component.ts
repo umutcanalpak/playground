@@ -36,9 +36,9 @@ export class PipeTestComponent {
       id: 0,
       objectName: '0',
     });
-
     
     // this.myObjectArray = this.myObjectArray;
     // this.myObjectArray = [...this.myObjectArray];
   }
+
 }
