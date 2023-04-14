@@ -20,6 +20,7 @@ import { MySecondPipePipe } from './my-second-pipe.pipe';
 import { HomeComponent } from './home/home.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ServerCallComponent } from './server-call/server-call.component';
+import { SiyahComponent } from './siyah/siyah.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ServerCallComponent } from './server-call/server-call.component';
     PipeTestComponent,
     HomeComponent,
     ViewchildComponent,
-    ServerCallComponent
+    ServerCallComponent,
+    SiyahComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LazyLoadingComponent } from './lazy-loading/lazy-loading.component';
 import { LazyLoadingTwoComponent } from './lazy-loading-two/lazy-loading-two.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MaviComponent } from '../mavi/mavi.component';
+import { SiyahComponent } from '../siyah/siyah.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,25 @@ const routes: Routes = [
   {
     path: 'two',
     component: LazyLoadingTwoComponent,
+    children: [
+      {
+        path: '',
+        redirectTo:'mavi',
+        pathMatch: 'full'
+      },
+      {
+        path: 'asd',
+        redirectTo:'siyah'
+      },
+      {
+        path: 'mavi',
+        component: MaviComponent
+      },
+      {
+        path: 'siyah',
+        component: SiyahComponent
+      }
+    ]
   },
 ];
 
