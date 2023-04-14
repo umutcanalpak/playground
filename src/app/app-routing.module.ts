@@ -44,7 +44,10 @@ const routes: Routes = [
   {
     path: 'pipe-test',
     component: PipeTestComponent,
-  },
+  }, {
+    path: 'lazy-loading',
+    loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule)
+  }
 ];
 
 @NgModule({
