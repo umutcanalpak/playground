@@ -29,6 +29,9 @@ const routes: Routes = [
   {
     path: 'jesse',
     component: JesseComponent,
+  }, {
+    path: 'jesse/:id',
+    component: JesseComponent,
   },
   {
     path: 'raynor',
