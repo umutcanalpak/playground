@@ -1,21 +1,21 @@
-console.log("************ playground **************");
+// console.log("************ playground **************");
 
-function Box(value) {
-  this.value = value;
-}
+// function Box(value) {
+//   this.value = value;
+// }
 
-Box.prototype.age = 33;
+// Box.prototype.age = 33;
 
-const box1 = new Box("mavi");
+// const box1 = new Box("mavi");
 
 
-console.log(box1.age);
+// console.log(box1.age);
 
-box1.age = 13213123;
-// Box.prototype.age = 13213123;
+// box1.age = 13213123;
+// // Box.prototype.age = 13213123;
 
-console.log(box1);
-console.log(box1.age);
+// console.log(box1);
+// console.log(box1.age);
 
-console.log("**************************");
-console.log("************ playground **************");
+// console.log("**************************");
+// console.log("************ playground **************");
