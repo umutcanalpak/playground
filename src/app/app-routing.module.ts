@@ -8,10 +8,17 @@ import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { HomeComponent } from './home/home.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ServerCallComponent } from './server-call/server-call.component';
+import { MaviComponent } from './mavi/mavi.component';
+import { SiyahComponent } from './siyah/siyah.component';
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -29,7 +36,8 @@ const routes: Routes = [
   {
     path: 'jesse',
     component: JesseComponent,
-  }, {
+  },
+  {
     path: 'jesse/:id',
     component: JesseComponent,
   },
@@ -44,10 +52,25 @@ const routes: Routes = [
   {
     path: 'pipe-test',
     component: PipeTestComponent,
-  }, {
+  },
+  {
     path: 'lazy-loading',
-    loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule)
-  }
+    loadChildren: () =>
+      import('./lazy-loading/lazy-loading.module').then(
+        (m) => m.LazyLoadingModule
+      ),
+  },
+  {
+    path: 'siyah',
+    component: SiyahComponent,
+    // pathMatch: 'full',
+    children: [
+      {
+        path: 'mavi',
+        component: MaviComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({

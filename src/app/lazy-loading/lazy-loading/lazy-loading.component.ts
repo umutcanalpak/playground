@@ -13,7 +13,7 @@ export class LazyLoadingComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('ngOnInit LazyLoadingComponent');
-  }
+}
 
   goToRandomId() {
     const randomNumber = Math.floor(Math.random() * 100);
