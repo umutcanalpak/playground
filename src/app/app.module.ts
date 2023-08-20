@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ServerCallComponent } from './server-call/server-call.component';
 import { SiyahComponent } from './siyah/siyah.component';
+import { TestCssComponent } from './test-css/test-css.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SiyahComponent } from './siyah/siyah.component';
     HomeComponent,
     ViewchildComponent,
     ServerCallComponent,
-    SiyahComponent
+    SiyahComponent,
+    TestCssComponent
   ],
   imports: [
     BrowserModule,

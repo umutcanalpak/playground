@@ -10,6 +10,7 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ServerCallComponent } from './server-call/server-call.component';
 import { MaviComponent } from './mavi/mavi.component';
 import { SiyahComponent } from './siyah/siyah.component';
+import { TestCssComponent } from './test-css/test-css.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'pipe-test',
     component: PipeTestComponent,
+  },
+  {
+    path: 'test-css',
+    component: TestCssComponent,
   },
   {
     path: 'lazy-loading',
