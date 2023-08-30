@@ -11,6 +11,7 @@ import { ServerCallComponent } from './server-call/server-call.component';
 import { MaviComponent } from './mavi/mavi.component';
 import { SiyahComponent } from './siyah/siyah.component';
 import { TestCssComponent } from './test-css/test-css.component';
+import { RxjsExamplesComponent } from './rxjs-examples/rxjs-examples.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'test-css',
     component: TestCssComponent,
+  },
+  {
+    path: 'rxjs-examples',
+    component: RxjsExamplesComponent,
   },
   {
     path: 'lazy-loading',

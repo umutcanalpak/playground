@@ -22,6 +22,7 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ServerCallComponent } from './server-call/server-call.component';
 import { SiyahComponent } from './siyah/siyah.component';
 import { TestCssComponent } from './test-css/test-css.component';
+import { RxjsExamplesComponent } from './rxjs-examples/rxjs-examples.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TestCssComponent } from './test-css/test-css.component';
     ViewchildComponent,
     ServerCallComponent,
     SiyahComponent,
-    TestCssComponent
+    TestCssComponent,
+    RxjsExamplesComponent
   ],
   imports: [
     BrowserModule,
