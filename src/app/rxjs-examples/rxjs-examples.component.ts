@@ -7,8 +7,48 @@ import { Observable } from 'rxjs';
   styleUrls: ['./rxjs-examples.component.scss'],
 })
 export class RxjsExamplesComponent implements OnInit {
+  readonly server = 'http://localhost:3000/';
+
   ngOnInit(): void {
-    this.example1();
+    // this.example1();
+    this.example2();
+  }
+
+  getFetchObservable(url = '', method = 'GET') {
+    return new Observable((subscriber) => {
+      fetch(this.server + url, {
+        method,
+      })
+        .then((value) => {
+          return value.json();
+        })
+        .then((value) => {
+          subscriber.next(value);
+          subscriber.complete();
+        });
+    });
+  }
+
+  example2() {
+    const observable = this.getFetchObservable('example-200');
+
+    new Observable();
+
+    const subscription = observable.subscribe({
+      next: (value) => {
+        console.log('value', value);
+      },
+      error: (err) => {
+        console.log('err', err);
+      },
+      complete: () => {
+        console.log('completed');
+      },
+    });
+
+    setTimeout(() => {
+      console.log('subscription.closed', subscription.closed);
+    }, 2000);
   }
 
   example1() {
